@@ -1,0 +1,86 @@
+:root {
+  /* Color Palette */
+  --dark-green: #575A4B;
+  --very-dark-green: #2A2C24;
+  --brown: #816C61;
+  --gray-brown: #A89B9D;
+  --lavender: #CFCFEA;
+
+  /* Font Size */
+  --root-font-size: 16px;
+  font-size: var(--root-font-size);
+
+  /* Font Families */
+  --font-headline: "Roboto Mono", monospace;
+  --font-family: "Lato", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: var(--very-dark-green);
+  color: var(--lavender);
+  font-family: var(--font-family);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input Field */
+
+#input-field {
+  width: 350px;
+  min-height: 150px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: var(--gray-brown);
+}
+
+#input-field input {
+  border: none;
+  border-bottom: 3px solid var(--very-dark-green);
+  background-color: transparent;
+  cursor: pointer;
+  outline: unset;
+}
+
+#input-field button {
+  border: none;
+  border-radius: 8px;
+  background-color: var(--very-dark-green);
+  color: var(--lavender);
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: all ease-in .5s;
+}
+
+#input-field button:hover {
+  background-color: var(--lavender);
+  color: var(--very-dark-green);
+  transition: all ease-in .5s;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 1.5rem
+  }
+
+.bold {
+  font-weight: bold;
+}
